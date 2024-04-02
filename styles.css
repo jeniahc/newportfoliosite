@@ -1,3 +1,5 @@
+/* " !important " overrides the default stylings in css */
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -9,7 +11,9 @@
 
 body {
     background-color: white;
-  }
+}
+
+/* navbar */
 
 nav {
     height: 90px;
@@ -161,12 +165,31 @@ label #cancelBtn {
     color: #fff !important;
 }
 
-
-  /* " !important " overrides the default colors in css */
+/* navbar ends */
 
 .grid {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
+}
+
+main .page-title {
+    color:#932E2E;
+    background-color: #fbf4f4;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+main .about-title {
+    color:#fff;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+main > h1 {
+    grid-column: span 12;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 30px;
 }
 
 header .mainImg {
@@ -178,6 +201,29 @@ header .mainImg {
     max-width: 100%;
 }
 
+main .resumeImg {
+    display: flex;
+    flex-direction: column;
+    grid-column: span 12;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+    width: 100%;
+    height: auto;
+}
+
+@media only screen and (max-width: 1000px) {
+    header .mainImg { 
+        grid-column: span 6; 
+    }
+    .responsiveImg {
+        width: 100%;   
+    }
+    main .resumeImg {
+        grid-column: span 12;
+    }
+}
+
 @media only screen and (max-width: 900px) {
     header .mainImg { 
         grid-column: span 6; 
@@ -185,7 +231,9 @@ header .mainImg {
     .responsiveImg {
         width: 100%;   
     }
-    
+    main .resumeImg {
+        grid-column: span 12;
+    }
 }
 
 @media only screen and (max-width: 800px) {
@@ -195,7 +243,9 @@ header .mainImg {
     .responsiveImg {
         width: 100%;   
     }
-    
+    main .resumeImg {
+        grid-column: span 12;
+    }
 }
 
 @media only screen and (max-width: 700px) {
@@ -204,6 +254,9 @@ header .mainImg {
     }
     .responsiveImg {
         width: 100%;   
+    }
+    main .resumeImg {
+        grid-column: span 12;
     }
 }
 
@@ -233,6 +286,7 @@ header .intro {
     color:#932E2E;
     border: none;
     padding: 15px;
+    font-weight: bold;
 }
 
 .learnMoreBtn:hover {
@@ -247,19 +301,170 @@ header .intro {
 
 main {
     padding: 20px;
-    
-}
-
-main .portfolio-title {
-    color:#932E2E;
-    background-color: #fff;
+    background-color: #fbf4f4;
 }
 
 main > h2 {
     grid-column: span 12;
     text-align: center;
     padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+.about-main {
+    background-color: #9d4747;
+}
+
+main .aboutImg {
+    grid-column: span 6;
+    float: left;
+}
+
+main .about {
+    float: left;
+    width: 100%;
+    grid-column: 7 / span 6;
+    justify-self: end;
+    padding-left: 20px;
+    color:#fff;
+    font-size: 20px;
+}
+
+main .contact-title {
+    float: left;
+    width: 100%;
+    padding-top: 20px;
     padding-bottom: 30px;
+    color: #9d4747;
+    background-color: #fbf4f4;
+    font-family: "bookmania", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 35px;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+main .email {
+    float: left;
+    width: 100%;
+    grid-column: span 6;
+    text-align: center;
+    font-weight: bold; 
+    color: #9d4747;
+}
+
+main .email > h4 {
+    font-family: "bookmania", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 35px;
+}
+
+main .email > p {
+    font-family: "bookmania", serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 30px;
+}
+
+main .linkedin-link {
+    float: left;
+    width: 100%;
+    grid-column: span 6;
+    text-align: center;
+    font-weight: bold; 
+    color: #9d4747;
+}
+
+main .linkedin-link > h4 {
+    font-family: "bookmania", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 35px;
+}
+
+main .linkedin-link > a {
+    font-family: "bookmania", serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 30px;
+    color: #9d4747;
+    text-decoration: none;
+}
+
+main .linkedin-link > a:hover {
+    text-decoration:underline;
+}
+
+@media screen and (max-width: 1100px) {
+    main .aboutImg {
+        grid-column: span 6;
+        float: left;
+    }
+    main .about {
+        font-size: 18px;
+        text-align: left;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    main .aboutImg {
+        grid-column: span 6;
+        float: left;
+    }
+    main .about {
+        font-size: 15px;
+        text-align: left;
+        
+    }
+}
+
+@media screen and (max-width: 800px) {
+    main .aboutImg {
+        grid-column: span 12;
+        float: left;
+    }
+    main .about {
+        grid-column: span 12;
+        font-size: 18px;
+        text-align: left;
+        padding-top: 15px;
+    }
+    main .email {
+        grid-column: span 12;
+    }
+    main .linkedin-link {
+        grid-column: span 12;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    main .aboutImg {
+        grid-column: span 12;
+        float: left;
+    }
+    main .about {
+        grid-column: span 12;
+        font-size: 18px;
+        text-align: left;
+        padding-top: 15px;
+    }
+    main .contact-title {
+
+    }
+    main .email {
+        grid-column: span 12;
+    }
+    main .linkedin-link {
+        grid-column: span 12;
+    }
+}
+
+main .portfolio-title {
+    color:#932E2E;
+    background-color: #fbf4f4;
+    font-weight: bold;
 }
 
 main .card {
@@ -267,12 +472,12 @@ main .card {
     justify-self: center;
     border-radius: 0;
     border: none;
-    margin-bottom: 30px;;
+    margin-bottom: 30px;
 }
 
 main .portfolio-link {
     color:#932E2E;
-    background-color:#fff;
+    background-color:#fbf4f4;
     text-decoration: none;
     padding-top:10px;
 }
@@ -282,7 +487,8 @@ main .portfolioBtn {
     margin-top: 30px;
     margin-bottom: 20px;
     background-color:#932E2E;
-    color:white;
+    color:#fbf4f4;
+    border-radius: 0;
     border: none;
     padding: 15px;
 }
@@ -308,6 +514,7 @@ section .blog-title {
     text-align: center;
     padding-top: 20px;
     padding-bottom: 30px;
+    
 }
 
 section .card {
@@ -322,6 +529,10 @@ section .blog-link {
     background-color:#9d4747;
     text-decoration: none;
     padding-top:10px;
+}
+
+section .blog-link:hover {
+    text-decoration: underline;
 }
 
 section .blogBtn {
@@ -346,7 +557,8 @@ section .blogBtn {
 
 main .highlight-title {
     color:#932E2E;
-    background-color: #fff;
+    background-color: #fbf4f4;
+    font-weight: bold;
 }
 
 @media screen and (max-width: 900px) {
@@ -359,23 +571,23 @@ main .highlight-title {
     }
 }
 
-main .page-title {
-    color:#932E2E;
-    background-color: #fff;
-}
-
-main > h1 {
-    grid-column: span 12;
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 30px;
-}
-
 
 
 @media screen and (max-width: 1118px) {
     .nav-title {
         left: 8%;
+    }
+    header .intro {
+        grid-column: span 6;
+        text-align: left;
+        padding: 80px;
+    }
+    header .intro h1 {
+        font-size: 35px;
+    }
+    header .intro p {
+        font-size:25px;
+        text-align: left;
     }
 }
 
@@ -387,6 +599,18 @@ main > h1 {
     }
     .nav-item {
         font-size: 15px;
+    }
+    header .intro {
+        grid-column: span 6;
+        text-align: left;
+        padding: 80px;
+    }
+    header .intro h1 {
+        font-size: 33px;
+    }
+    header .intro p {
+        font-size:22px;
+        text-align: left;
     }
   
 }
@@ -451,13 +675,13 @@ main > h1 {
     header .intro {
         grid-column: span 6;
         text-align: left;
-        
+        padding: 60px;
     }
     header .intro h1 {
-        font-size: 35px;
+        font-size: 25px;
     }
     header .intro p {
-        font-size:25px;
+        font-size:20px;
         text-align: left;
     }
 }
@@ -477,22 +701,46 @@ main > h1 {
     }
 }
 
-/*.responsiveImg {
-    max-width:100%;
-    height:auto;
+footer {
+    height: 90px;
+    background-color: #932E2E;
 }
 
-/*.intro {
-    width:50%;
-    float: left;
-    padding-top: 114px;
-    padding-left: 70px;
-    padding-right: 80px;
-    padding-bottom: 200px;
-    border-radius: 0;
-    color:#fff;
-    background-color: #9d4747;
+footer .copyright {
+    color: #fff;
+    font-size: 15px;
+    position: absolute;
+    padding-top: 36px;
+    left: 4%;
+    text-transform: uppercase;
 }
+
+/* Style all font awesome icons */
+.fa {
+    float:right;
+    margin-top: 35px;
+    margin-right: 45px;
+    padding: 4px;
+    font-size: 15px;
+    width: 22px;
+    border-radius: 3px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  /* Set a specific color for each brand */
+  
+  /* LinkedIn */
+  .fa-linkedin {
+    background: #3B5998;
+    color: white;
+  }
+ 
 
 
 
