@@ -172,6 +172,13 @@ label #cancelBtn {
     grid-template-columns: repeat(12, 1fr);
 }
 
+main > h1 {
+    grid-column: span 12;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
 main .page-title {
     color:#932E2E;
     background-color: #fbf4f4;
@@ -185,12 +192,92 @@ main .about-title {
     text-transform: uppercase;
 }
 
-main > h1 {
-    grid-column: span 12;
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 30px;
+/* uiux portfolio container */
+
+.uiux-container {
+    top:-60px;
+    position:relative;
+    max-width:1300px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-weight: bold;
+    
 }
+
+.uiux-container .card {
+    width: 308px;
+    position:relative;
+    height: 620px;
+    background-color: #9d4747;
+    color:#fbf4f4;
+    margin: 30px 20px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, .5);
+    transition: 0.3s ease-in-out;
+    margin-top: 5%;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+.uiux-container .card .imgBox {
+    position: relative;
+    left:9px;
+    width: 260px;
+    height: 150px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 1.2);
+    border-radius: 5px;
+}
+
+.uiux-container .card .imgBox img {
+    max-width: 100%;
+    padding-bottom: 15px;
+    border-radius: 3px;
+}   
+
+/* uiux portfolio container ends */
+
+/* photography portfolio container */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+article .page-title {
+    color:#932E2E;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 35px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.container .box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.container .box .photography-grid {
+    display: flex;
+    flex-direction: column;
+    width: 32.5%;
+}
+
+.container .box .photography-grid img {
+    width: 100%;
+    padding-bottom: 15px;
+    border-radius: 3px;
+}
+
+/* photography portfolio container ends */
 
 header .mainImg {
     grid-column: 1 / span 6;
@@ -450,9 +537,7 @@ main .linkedin-link > a:hover {
         text-align: left;
         padding-top: 15px;
     }
-    main .contact-title {
 
-    }
     main .email {
         grid-column: span 12;
     }
@@ -491,6 +576,7 @@ main .portfolioBtn {
     border-radius: 0;
     border: none;
     padding: 15px;
+    font-weight: bold;
 }
 
 .portfolioBtn:hover {
@@ -543,6 +629,7 @@ section .blogBtn {
     color:#932E2E;
     border: none;
     padding: 15px;
+    font-weight: bold;
 }
 
 .blogBtn:hover {
@@ -699,6 +786,12 @@ main .highlight-title {
         font-size:20px;
         text-align: left;
     }
+    section .blogBtn {
+        grid-column: span 12;
+    }
+    main .portfolioBtn {
+        grid-column: span 12;
+    }
 }
 
 footer {
@@ -730,7 +823,8 @@ footer .copyright {
   
   /* Add a hover effect if you want */
   .fa:hover {
-    opacity: 0.7;
+    background: #fff;
+    color: #3B5998;
   }
   
   /* Set a specific color for each brand */
