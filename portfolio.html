@@ -9,66 +9,112 @@
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/navbar-bottom/">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
     <link href="bootstrap.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/14da24b093.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
+<!--nav-->
+<nav>
+    <input type="checkbox" id="check">
+    <label for="check">
+        <i class="fas fa-bars" id="menuBtn"></i>
+        <i class="fas fa-times" id="cancelBtn"></i>
+    </label>
+    <a href="index.html" class="nav-title">JENIAH CLARKE</a>
+    <ul class="navResponse">
+        <li class="nav-item2">
+            <a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item2 dropdown2"> 
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="portfolio.html" role="button" aria-expanded="false">Portfolio</a>
+            <ul class="dropdown-menu2">
+                <li><a class="dropdown-item2" href="uiuxdesign.html">UI/UX Design</a></li>
+                <li><a class="dropdown-item2" href="webdevelopment.html">Web Development</a></li>
+                <li><a class="dropdown-item2" href="digitalillustrations.html">Digital Illustrations</a></li>
+                <!--<li><a class="dropdown-item2" href="filmography.html">Filmography</a></li>-->
+                <!--<li><a class="dropdown-item2" href="graphicdesign.html">Graphic Design</a></li>-->
+                <li><a class="dropdown-item2" href="photography.html">Photography</a></li>
+              </ul>
+        </li>
+        <li class="nav-item2">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item2">
+            <a class="nav-link" href="resume.html">Resume</a>
+          </li>
+          <li class="nav-item2">
+            <a class="nav-link" href="https://niahthebibliophile.blogspot.com/">Blog</a>
+    </ul>
+    <ul class="noResponse">
+        <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item dropdown"> 
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="portfolio.html" role="button" aria-expanded="false">Portfolio</a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="uiuxdesign.html">UI/UX Design</a></li>
+                <li><a class="dropdown-item" href="webdevelopment.html">Web Development</a></li>
+                <li><a class="dropdown-item" href="digitalillustrations.html">Digital Illustrations</a></li>
+                <!--<li><a class="dropdown-item" href="filmography.html">Filmography</a></li>-->
+                <!--<li><a class="dropdown-item" href="graphicdesign.html">Graphic Design</a></li>-->
+                <li><a class="dropdown-item" href="photography.html">Photography</a></li>
+              </ul>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="resume.html">Resume</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://niahthebibliophile.blogspot.com/">Blog</a>
+    </ul>
+</nav>
+<!--nav ends-->
 
-<!--header-->
-<nav class="navbar navbar-expand-lg bg-white rounded fixed-top nav-underline" aria-label="Thirteenth navbar example">
-    <div class="container-fluid">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample11" aria-controls="navbarsExample11" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
 
-      <div class="collapse navbar-collapse d-lg-flex">
-        <a class="navbar-brand col-lg-3 me-0" href="#">Centered nav</a>
-        <ul class="navbar-nav col-lg-6 justify-content-lg-center">
-            <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Portfolio</a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">UI/UX Design</a></li>
-                    <li><a class="dropdown-item" href="#">Web Development</a></li>
-                    <li><a class="dropdown-item" href="#">Digital Illustrations</a></li>
-                    <li><a class="dropdown-item" href="#">Filmography</a></li>
-                    <li><a class="dropdown-item" href="#">Graphic Design</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="#">Photography</a></li>
-                  </ul>
-                </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Resume</a>
-              </li>
-            </ul>
-        <div class="d-lg-flex col-lg-3 justify-content-lg-end">
-          <button class="btn btn-bd-primary">Button</button>
-        </div>
-      </div>
-    </div>
-  </nav>
-<!--header ends-->
-
-<main class="grid">
+<main>
   <h1 class="page-title">
     Portfolio
   </h1>
-</main>
-
-<!--grid-container-->
-    <div id="grid-container">
-      <div id="uiuxDesign">UI/UX Design</div>
-      <div id="webDev">Web Development Projects</div>
-      <div id="digIll">Digital Illustrations</div>
-      <div id="photography">Photography</div>
-      <div id="filmography">Filmography</div>
-      <div id="graphicDesign">Graphic Design</div>
+  <div class="portfolio-container">
+    <div class="card">
+      <h3 class="project-title">Web Development</h2>
+      <div class="imgBox">
+        <a href="webdevelopment.html">
+          <img src="" alt="">
+        </a>
+      </div>
     </div>
-<!--grid-container ends-->
+
+    <div class="card">
+      <h3 class="project-title">UI/UX Design</h2>
+      <div class="imgBox">
+        <a href="uiuxdesign.html">
+          <img src="" alt="">
+        </a>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3 class="project-title">Digital Illustrations</h2>
+      <div class="imgBox">
+        <a href="digitalillustrations.html">
+          <img src="" alt="">
+        </a>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3 class="project-title">Photography</h2>
+      <div class="imgBox">
+        <a href="photography.html">
+          <img src="" alt="">
+        </a>
+      </div>
+    </div>
+</div>
+
+
+</main>
 
 
 <!--footer-->

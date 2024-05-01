@@ -27,13 +27,13 @@
             <a class="nav-link" href="index.html">Home</a>
         </li>
         <li class="nav-item2 dropdown2"> 
-            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Portfolio</a>
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="portfolio.html" role="button" aria-expanded="false">Portfolio</a>
             <ul class="dropdown-menu2">
                 <li><a class="dropdown-item2" href="uiuxdesign.html">UI/UX Design</a></li>
                 <li><a class="dropdown-item2" href="webdevelopment.html">Web Development</a></li>
                 <li><a class="dropdown-item2" href="digitalillustrations.html">Digital Illustrations</a></li>
-                <li><a class="dropdown-item2" href="filmography.html">Filmography</a></li>
-                <li><a class="dropdown-item2" href="graphicdesign.html">Graphic Design</a></li>
+                <!--<li><a class="dropdown-item2" href="filmography.html">Filmography</a></li>-->
+                <!--<li><a class="dropdown-item2" href="graphicdesign.html">Graphic Design</a></li>-->
                 <li><a class="dropdown-item2" href="photography.html">Photography</a></li>
               </ul>
         </li>
@@ -51,13 +51,13 @@
             <a class="nav-link" href="index.html">Home</a>
         </li>
         <li class="nav-item dropdown"> 
-            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Portfolio</a>
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="portfolio.html" role="button" aria-expanded="false">Portfolio</a>
             <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="uiuxdesign.html">UI/UX Design</a></li>
                 <li><a class="dropdown-item" href="webdevelopment.html">Web Development</a></li>
                 <li><a class="dropdown-item" href="digitalillustrations.html">Digital Illustrations</a></li>
-                <li><a class="dropdown-item" href="filmography.html">Filmography</a></li>
-                <li><a class="dropdown-item" href="graphicdesign.html">Graphic Design</a></li>
+                <!--<li><a class="dropdown-item" href="filmography.html">Filmography</a></li>-->
+                <!--<li><a class="dropdown-item" href="graphicdesign.html">Graphic Design</a></li>-->
                 <li><a class="dropdown-item" href="photography.html">Photography</a></li>
               </ul>
         </li>
@@ -75,8 +75,8 @@
 
 <!--home-grid section-->
 <header class="grid" class="about-home">
-    <div class="mainImg"> 
-        <img src="homepageimgs/Portfolio_MainImg.png" alt=" " class="responsiveImg" height="710" width="716">
+    <div class="mainImg">
+        <img src="homepageimgs/Portfolio_MainImg.png" alt=" " class="responsiveImg">
     </div>
     <div class="intro">
         <h1>
@@ -87,56 +87,125 @@
         I'm an artist, filmmaker, and web designer based in Texas. My goal is simple: to use my skills and creativity to elevate others' projects and bring their visions to life.
         </p>
     <br>
+    <div class="grid">
         <button class="learnMoreBtn" onclick="window.location.href='about.html'">Learn More About Me</button>
-    </div>
+    </div> 
+</div>
 </header>
-<main class="grid" class="portfolio-home">
-        <h2 class="portfolio-title">
-            Check out My Latest Work
-        </h2>
-        <div class="card">
-            <img src="" alt="" width="340px" height="340px">
-            <a class="portfolio-link" href="">Project Title 1</a>
-        </div>
-        <div class="card">
-            <img src="" alt="" width="340px" height="340px">
-            <a class="portfolio-link" href="">Project Title 2</a>
-        </div>
-        <div class="card">
-            <img src="" alt="" width="340px" height="340px">
-            <a class="portfolio-link" href="">Project Title 3</a>
-        </div>
-        <br>
-        <button class="portfolioBtn" onclick="window.location.href='portfolio.html'">View My Entire Portfolio</button>
-</main>
-<section class="grid" class="blog-home">
-    <h2 class="blog-title">
-        Check out My Blog Where I Ramble About Movies and Books
+
+
+<main class="portfolio-home">
+    <h2 class="portfolio-title">
+        Check out My Latest Web Design Projects
     </h2>
-    <div class="card">
-        <img src="homepageimgs/summer_tbr.jpg" alt="" width="350px">
+        <div class="home-container">
+            <div class="card">
+                <div class="imgBox">
+                    <img src="webdevelopment/PortfolioWebsite_github_jclarke.png" alt="">
+                </div>
+                    <br>
+                    <h3 class="title">Professional Portfolio Website</h3>
+            </div>
+
+            <div class="card">
+                <div class="imgBox">
+                    <img src="uiuxdesign/MockPrimeVideoAppHomeScreen_xd_jclarke.png" alt="">
+                </div>
+                    <br>
+                    <h3 class="title">User Interface Project</h3>
+            </div>
+
+            <div class="card">
+                <div class="imgBox">
+                    <img src="webdevelopment/WordCampWebsite_github_jclarke.png" alt="">
+                </div>
+                    <br>
+                    <h3 class="title">WordCamp Website Project</h3>
+                </div> 
+                <br>
+        </div>
+    <div class="grid">
+    <button class="portfolioBtn" onclick="window.location.href='webdevelopment.html'">View My Entire Portfolio</button>
+    </div>
+</main>
+
+
+<section class="blog-home">
+    <h2 class="blog-title">
+        Check out My Blog Where I Ramble About Books
+    </h2>
+    <div class="blog-container">
+        <div class="card">
+            <div class="imgBox">
+                <img src="homepageimgs/summer_tbr.jpg" alt="">
+            </div>
         <a class="blog-link" href="https://niahthebibliophile.blogspot.com/2023/05/summer-tbr-list.html">
             Summer TBR List!!</a>
     </div>
-    <div class="card">
-        <img src="homepageimgs/Dread_Nation_book_review.png" alt="" width="350px">
+
+        <div class="card">
+            <div class="imgBox">
+                <img src="homepageimgs/Dread_Nation_book_review.png" alt="">
+            </div>
         <a class="blog-link" href="https://niahthebibliophile.blogspot.com/2023/03/book-review-dread-nation-by-justina.html">
             Book Review: Dread Nation by Justina Ireland</a>
     </div>
-    <div class="card">
-        <img src="homepageimgs/Deathless_Divide_book_review.jpg" alt="" width="350px">
-        <a class="blog-link" href="https://niahthebibliophile.blogspot.com/2023/04/book-review-deathless-divide-by-justina.html">
-            Book Review: Deathless Divide by Justina Ireland</a>
-    </div>
-    <br>
-    <button class="blogBtn" onclick="window.location.href='https://niahthebibliophile.blogspot.com/'">See More Blog Posts</button>
-</section>
-<main class="grid" class="slideshow">
-    <h2 class="highlight-title">
-            Highlights
-    </h2>
 
-</main>
+        <div class="card">
+            <div class="imgBox">
+                <img src="homepageimgs/Deathless_Divide_book_review.jpg" alt="">
+            </div>
+        <a class="blog-link" href="https://niahthebibliophile.blogspot.com/2023/04/book-review-deathless-divide-by-justina.html">
+           <p>Book Review: Deathless Divide by Justina Ireland</p> 
+        </a>
+        </div>
+    <br>
+    </div>
+    <div class="grid">
+    <button class="blogBtn" onclick="window.location.href='https://niahthebibliophile.blogspot.com/'">See More Blog Posts</button>
+    </div>
+</section>
+
+    <main>
+    <h2 class="highlight-title">
+            Check out My Latest Illustrations
+    </h2>
+    <div class="illustration-container home-illcontainer">
+      <div class="card">
+        <div class="imgBox">
+          <a href="#">
+            <img src="illustrations/Nature_Flowing_Rhythm_jclarke.jpg" alt="">
+          </a>
+        </div>
+        <br>
+        <h4 class="title">"Pool Day"</h4>
+      </div>
+
+       <div class="card">
+        <div class="imgBox">
+          <a href="#">
+            <img src="illustrations/Culture_Random_Rhythm_jclarke.jpg" alt="">
+          </a>
+        </div>
+        <br>
+        <h4 class="title">"Pronouncing My Name"</h4>
+      </div>
+ 
+      <div class="card">
+        <div class="imgBox">
+          <a href="#">
+            <img src="illustrations/Art_Alternating_Rhythm_jclarke.jpg" alt="">
+          </a>
+        </div>
+        <br>
+        <h4 class="title">"Rhythm &amp; Pinks"</h4>
+      </div>
+      
+    </div>
+    <div class="grid">
+    <button class="portfolioBtn" onclick="window.location.href='digitalillustrations.html'">View More Illustrations</button>
+    </div>
+    </main>
 
 
 <!--home-grid section ends-->
